@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "ginger-bold";
+  src: url("fonts/f37_ginger_bold-webfont.woff2") format("woff2"),
+    url("fonts/f37_ginger_bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ginger-regular";
+  src: url("fonts/f37_ginger_regular-webfont.woff2") format("woff2"),
+    url("fonts/f37_ginger_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "ginger-regular";
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  /* background-color: blanchedalmond; */
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.primary-color {
+  color: #1544c0;
+}
+
+/* NAV */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px dashed pink;
+  /* padding: 0 1rem; */
+  padding: 1rem;
+  height: 4rem;
+  /* background-color: #fff; */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-family: "ginger-bold";
+  text-transform: uppercase;
+  color: black;
+  font-size: 1.125rem;
+}
+
+.nav-item {
+  margin-left: 1rem;
+}
