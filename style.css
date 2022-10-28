@@ -46,7 +46,7 @@ h6 {
   font-family: ginger-bold;
 }
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 .nav-bar {
@@ -108,9 +108,10 @@ h6 {
 .section-hero {
   color: var(--white);
   background-color: var(--blue);
-  height: calc(100vh - 64px);
+  height: 100%;
   padding: 2rem 24px 0;
   text-align: center;
+  padding-bottom: 3rem;
 }
 .hero-content {
   display: flex;
@@ -333,6 +334,7 @@ svg {
   }
   .section-hero {
     padding: 0;
+    height: calc(var(--vh, 1vh) * 100);
   }
   .about-content-wrapper {
     align-items: baseline;

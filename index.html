@@ -101,7 +101,7 @@
                     <div class="project-content">
                         <img class="project-img" src="./imgs/joshua-woroniecki-lzh3hPtJz9c-unsplash.jpeg" />
                         <h3>WEBSITE - MY PORTFOLIO</h3>
-                        <h4>Tech: HTMl, CSS, Javascript</h4>
+                        <h4>Tech: HTML, CSS, Javascript</h4>
                         <p class="text-content">
                             A quick bio about what i've done over the years in my developments
                             journey. I've worked on a bit of this and a bit of that. you know.
@@ -154,5 +154,14 @@
     </div>
     <div class="footer">Ben Hamel - Newfoundland, Canada</div>
 </body>
+
+<script>
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+    window.addEventListener('resize', () => {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
+</script>
 
 </html>
