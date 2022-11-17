@@ -236,6 +236,9 @@ svg {
   text-align: center;
   padding: 0.25rem 12px;
 }
+.button-item-disabled {
+  background-color: lightgray;
+}
 .project-img {
   border-radius: 24px;
   width: 100%;
