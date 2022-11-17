@@ -89,7 +89,7 @@ h6 {
   font-size: 3rem;
 }
 .section h3 {
-  font-size: 10px;
+  font-size: 0.75rem;
   color: var(--blue);
   line-height: 12px;
   letter-spacing: 0.075rem;
@@ -197,7 +197,6 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 400px;
   height: 100%;
   gap: 1rem;
 }
@@ -208,6 +207,7 @@ h6 {
 }
 .about-body {
   font-family: ginger-regular;
+  text-align: justify;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -215,12 +215,12 @@ h6 {
 }
 .button-group {
   width: 100%;
-  max-width: 320px;
   height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
   margin-top: 1.125rem;
+  gap: 1.5rem;
 }
 svg {
   display: block;
@@ -256,13 +256,25 @@ svg {
 }
 .project-button-group {
   width: 100%;
-  height: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding: 0 1rem;
-  margin-top: 1.125rem;
+  margin-top: auto;
   gap: 12px;
+  text-decoration: line-through;
+}
+.flex-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem 2rem;
+}
+.card {
+  display: flex;
+  flex: 1 1 300px;
+  flex-direction: column;
+  gap: 1rem;
 }
 .footer {
   background-color: var(--blue);
@@ -291,6 +303,9 @@ svg {
   }
 }
 @media (min-width: 768px) {
+  .flex-cards {
+    margin: 2rem 4rem;
+  }
   .about-flex-right {
     order: 2;
   }
@@ -338,6 +353,7 @@ svg {
   }
   .about-content-wrapper {
     align-items: baseline;
+    max-width: 400px;
   }
   .section .content {
     flex-direction: row;
@@ -349,6 +365,7 @@ svg {
     flex-direction: row;
     gap: 2rem;
     margin: 2rem 4rem;
+    flex-grow: 1;
   }
   .about-content-right {
     flex: 1 1 0px;
