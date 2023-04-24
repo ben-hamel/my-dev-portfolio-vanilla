@@ -211,7 +211,6 @@ h6 {
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
-  line-height: 19px;
 }
 .button-group {
   width: 100%;
@@ -254,7 +253,7 @@ svg {
   font-family: ginger-regular;
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 19px;
 }
 .project-button-group {
